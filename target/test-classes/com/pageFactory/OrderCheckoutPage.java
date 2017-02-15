@@ -1,7 +1,10 @@
 package com.pageFactory;
 
+import java.util.List;
+
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import com.generic.StepBase;
@@ -9,8 +12,8 @@ import com.generic.StepBase;
 public class OrderCheckoutPage 
 {
 	private StepBase objStepBase = new StepBase();
+	private BuildHomePage objhomePage = new BuildHomePage();
 	public static By btnChekout = By.cssSelector("div[class='button-group right']>a[href*='https://www.build.com/index.cfm?page=checkout:payments']");
-	//public static By btnChekout = By.xpath(".//*[@id='checkoutbuttons']/fieldSet/a");
 	public static By btnCheckoutAsGuest = By.cssSelector("button[name='guestLoginSubmit']");
 	public static By txtFirstName = By.cssSelector("input[id='shippingfirstname']");
 	public static By txtLastName = By.cssSelector("input[id='shippinglastname']");
@@ -29,14 +32,19 @@ public class OrderCheckoutPage
 	public static By txtCreditCardName = By.cssSelector("input[id='creditcardname']");
 	public static By txtCreditCardCVV = By.cssSelector("input[id='creditCardCVV2']");
 	public static By btnReviewOrder = By.cssSelector("input[value='Review Order']");
+	public static By lblTotalOrderPrice = By.cssSelector("div[id='grandtotalamount']");
+	public static By lblTaxPrice = By.cssSelector("div[id='taxAmount']");
+	public static By priceList = By.cssSelector("td[class='total']");
 	
 	public void clickCheckoutButton()
 	{
+		objhomePage.waitForElementToBeClickable(btnChekout);
 		objStepBase.getDriver().findElement(btnChekout).click();
 	}
 
 	public void clickCheckoutAsGuestButton()
 	{
+		objhomePage.waitForElementToBeClickable(btnCheckoutAsGuest);
 		objStepBase.getDriver().findElement(btnCheckoutAsGuest).click();
 	}
 
@@ -138,6 +146,7 @@ public class OrderCheckoutPage
 	
 	public void clickReviewOrder()
 	{
+		objhomePage.waitForElementToBeClickable(btnReviewOrder);
 		objStepBase.getDriver().findElement(btnReviewOrder).click();
 	}
 	
@@ -146,4 +155,20 @@ public class OrderCheckoutPage
 		Assertions.assertThat(objStepBase.getDriver().getCurrentUrl().equalsIgnoreCase(url));
 	}
 
+	public void verifyCATax()
+	{
+		Assertions.assertThat(objStepBase.getDriver().findElement(lblTaxPrice).getText().trim().equals("$0.00"));
+	}
+	
+	public void verifyGrandTotal()
+	{
+		String grandTotal = objStepBase.getDriver().findElement(lblTotalOrderPrice).getText().trim();
+		double totalPrice = 0.0;
+		List<WebElement> individualPrices = objStepBase.getDriver().findElements(OrderCheckoutPage.priceList);
+		for (WebElement webElement : individualPrices) 
+		{
+			totalPrice = totalPrice + Double.parseDouble(webElement.getText().trim().substring(1));
+		}
+		Assertions.assertThat(grandTotal.contains(String.valueOf(totalPrice)));
+	}
 }

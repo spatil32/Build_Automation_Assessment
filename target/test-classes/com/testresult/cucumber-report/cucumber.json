@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 13990582790,
+              "duration": 18031730663,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 31,
+        "line": 35,
         "name": "Assessment_TestCase1",
         "description": "",
         "id": "build---selenium-webdriver-automation-assessment;assessment-testcase1;;2",
         "after": [
           {
             "result": {
-              "duration": 1686281099,
+              "duration": 842415034,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 171941298,
+              "duration": 149517794,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 34841872936,
+              "duration": 36569082712,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 42635992274,
+              "duration": 31993267923,
               "status": "passed"
             },
             "line": 7,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 41944486286,
+              "duration": 30250757557,
               "status": "passed"
             },
             "line": 8,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 9578752177,
+              "duration": 11438450060,
               "status": "passed"
             },
             "line": 9,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 6021949789,
+              "duration": 5987609626,
               "status": "passed"
             },
             "line": 10,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 9541076996,
+              "duration": 10121030667,
               "status": "passed"
             },
             "line": 11,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 1059580134,
+              "duration": 919443771,
               "status": "passed"
             },
             "line": 12,
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 935535090,
+              "duration": 836987253,
               "status": "passed"
             },
             "line": 13,
@@ -169,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 1047625884,
+              "duration": 855206661,
               "status": "passed"
             },
             "line": 14,
@@ -190,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 960917265,
+              "duration": 1141598263,
               "status": "passed"
             },
             "line": 15,
@@ -211,7 +211,7 @@
           },
           {
             "result": {
-              "duration": 1017941338,
+              "duration": 779867623,
               "status": "passed"
             },
             "line": 16,
@@ -232,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 1260710072,
+              "duration": 1015229486,
               "status": "passed"
             },
             "line": 17,
@@ -253,7 +253,7 @@
           },
           {
             "result": {
-              "duration": 1702238365,
+              "duration": 1664990252,
               "status": "passed"
             },
             "line": 18,
@@ -274,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 1108609043,
+              "duration": 771445393,
               "status": "passed"
             },
             "line": 19,
@@ -295,7 +295,7 @@
           },
           {
             "result": {
-              "duration": 1271662550,
+              "duration": 1001108653,
               "status": "passed"
             },
             "line": 20,
@@ -316,7 +316,7 @@
           },
           {
             "result": {
-              "duration": 1040404241,
+              "duration": 904909458,
               "status": "passed"
             },
             "line": 21,
@@ -337,7 +337,7 @@
           },
           {
             "result": {
-              "duration": 1145454093,
+              "duration": 800107786,
               "status": "passed"
             },
             "line": 22,
@@ -358,7 +358,7 @@
           },
           {
             "result": {
-              "duration": 1510617119,
+              "duration": 1406682713,
               "status": "passed"
             },
             "line": 23,
@@ -379,7 +379,7 @@
           },
           {
             "result": {
-              "duration": 1600263124,
+              "duration": 1533382094,
               "status": "passed"
             },
             "line": 24,
@@ -400,7 +400,7 @@
           },
           {
             "result": {
-              "duration": 902408195,
+              "duration": 749303129,
               "status": "passed"
             },
             "line": 25,
@@ -421,7 +421,7 @@
           },
           {
             "result": {
-              "duration": 824804752,
+              "duration": 652774690,
               "status": "passed"
             },
             "line": 26,
@@ -442,13 +442,58 @@
           },
           {
             "result": {
-              "duration": 7442686763,
+              "duration": 7725164566,
               "status": "passed"
             },
             "line": 27,
             "name": "I click on Review Order button",
             "match": {
               "location": "AssessmentStepDefinitions.I_click_on_Review_Order_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1277957143,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify https://www.build.com/index.cfm?page\u003dcheckout:review for delivery \u0026 review page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.build.com/index.cfm?page\u003dcheckout:review",
+                  "offset": 9
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_verify_url_for_delivery_and_review_page(String)"
+            },
+            "matchedColumns": [
+              16
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 224886723,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I verify that CA tax is correct",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_verify_that_CA_tax_is_correct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 833235586,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I verify that grand total is correct",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_verify_that_grand_total_is_correct()"
             },
             "keyword": "Then "
           }

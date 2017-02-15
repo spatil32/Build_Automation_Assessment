@@ -27,8 +27,6 @@ public class AssessmentStepDefinitions
 	private BuildHomePage objBuildHomePage = new BuildHomePage();
 	private OrderCheckoutPage objOrderCheckoutPage = new OrderCheckoutPage();
 	
-	List<String> totalCartItmesPrice = new ArrayList<>();
-
 	@Given("^I open the browser and navigate to build website homepage$")
 	public void I_open_the_browser_and_navigate_to_build_website_homepage()
 	{
@@ -46,16 +44,8 @@ public class AssessmentStepDefinitions
 		Assert.assertTrue("Correct product is not selected.", objBuildHomePage.getProductHeaderText().contains("Suede"));
 		System.out.println(objBuildHomePage.getProductHeaderText());
 		
-		totalCartItmesPrice.add(objBuildHomePage.getProductPrice());
-		
 		objBuildHomePage.setProductQuantity("1");
 		objBuildHomePage.clickAddToCartButton();
-		
-		System.out.println("Prices: ");
-		for (String string : totalCartItmesPrice)
-		{
-			System.out.println(string);
-		}
 	}
 
 	@Then("^I add one product with Cashmere Kohler K66266U name to the cart$")
@@ -63,24 +53,15 @@ public class AssessmentStepDefinitions
 	{
 		try 
 		{
-			objBuildHomePage.goToHomePage();
-			Thread.sleep(5000L);
+			objBuildHomePage.waitForElementToBeClickable(BuildHomePage.reSearchButton);
 			objBuildHomePage.searchProduct("Cashmere Kohler K66266U");
 			objBuildHomePage.selectCashmereKohlerProduct();
 			
 			Assert.assertTrue("Correct product is not selected.", objBuildHomePage.getProductHeaderText().contains("Cashmere"));
 			System.out.println(objBuildHomePage.getProductHeaderText());
-			
-			totalCartItmesPrice.add(objBuildHomePage.getProductPrice());
-			
+						
 			objBuildHomePage.setProductQuantity("1");
 			objBuildHomePage.clickAddToCartButton();
-			
-			System.out.println("Prices: ");
-			for (String string : totalCartItmesPrice) 
-			{
-				System.out.println(string);
-			}			
 		}
 		catch (Exception e)
 		{
@@ -93,20 +74,11 @@ public class AssessmentStepDefinitions
 	{
 		try 
 		{
-			objBuildHomePage.goToHomePage();
-			Thread.sleep(5000L);
+			objBuildHomePage.waitForElementToBeClickable(BuildHomePage.reSearchButton);
 			objBuildHomePage.searchProduct("Kohler K-5180-ST");
-						
-			totalCartItmesPrice.add(objBuildHomePage.getProductPrice());
-			
+									
 			objBuildHomePage.setProductQuantity("2");
 			objBuildHomePage.clickAddToCartButton();
-			
-			System.out.println("Prices: ");
-			for (String string : totalCartItmesPrice) 
-			{
-				System.out.println(string);
-			}			
 		}
 		catch (Exception e)
 		{
@@ -232,6 +204,18 @@ public class AssessmentStepDefinitions
 	@Then("^I verify (.*) for delivery & review page$")
 	public void I_verify_url_for_delivery_and_review_page(String url)
 	{
-		
+		objOrderCheckoutPage.confirmReviewOrderPage(url);
+	}
+	
+	@Then("^I verify that CA tax is correct$")
+	public void I_verify_that_CA_tax_is_correct()
+	{
+		objOrderCheckoutPage.verifyCATax();
+	}
+	
+	@Then("^I verify that grand total is correct$")
+	public void I_verify_that_grand_total_is_correct()
+	{
+		objOrderCheckoutPage.verifyGrandTotal();
 	}
 }

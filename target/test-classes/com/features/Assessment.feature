@@ -26,6 +26,8 @@ Scenario Outline: Assessment_TestCase1
 	Then I enter <cvv> in cvv field of Shipping Address Form
 	Then I click on Review Order button
 	Then I verify <url> for delivery & review page
+	Then I verify that CA tax is correct
+	Then I verify that grand total is correct
 	
 	
 	Examples:

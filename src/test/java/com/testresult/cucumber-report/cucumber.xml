@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="185.244394">
-<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="185.244394">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="170.478143">
+<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="170.478143">
 <system-out><![CDATA[Given I open the browser and navigate to build website homepage.............passed
 Then I add one product with Suede Kohler K66266U name to the cart...........passed
 Then I add one product with Cashmere Kohler K66266U name to the cart........passed
@@ -24,6 +24,9 @@ Then I select 2017 in credit card year validity field of Shipping Address Form.p
 Then I enter Shreyas Patil in cardName field of Shipping Address Form.......passed
 Then I enter 123 in cvv field of Shipping Address Form......................passed
 Then I click on Review Order button.........................................passed
+Then I verify https://www.build.com/index.cfm?page=checkout:review for delivery & review page.passed
+Then I verify that CA tax is correct........................................passed
+Then I verify that grand total is correct...................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

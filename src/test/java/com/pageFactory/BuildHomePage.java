@@ -13,7 +13,7 @@ public class BuildHomePage
 	public static By productSearchBox = By.cssSelector("input[id='search_txt']");
 	public static By reSearchProduct = By.cssSelector("input[id='headerSearchInput']");
 	public static By productSearchButton = By.cssSelector("button[class='button-primary search-site-search']");
-	public static By reSearchButton = By.cssSelector("button[id='headerSearch']");
+	public static By reSearchButton = By.cssSelector("#search_txt");
 	//public static By seude_kohler_product = By.cssSelector("li[class='media'][data-original-title='Suede<br>$740.03 / Made To Order']");
 	public static By seude_kohler_product = By.cssSelector("img[alt='Suede']");		
 	public static By product_header_text = By.cssSelector("h2[class='sub-text js-sub-heading']");
@@ -24,24 +24,32 @@ public class BuildHomePage
 	public static By homePageLink = By.cssSelector("a[href*='/?intcmp=cart_home']");
 	public static By cashmere_kohler_product = By.cssSelector("li[class='media'][data-original-title='Cashmere<br>$740.03 / 9 In Stock']");
 	
+	public void waitForElementToBeClickable(By element)
+	{
+		objStepBase.getWebdriverWait().until(ExpectedConditions.elementToBeClickable(element));
+	}
 	
 	public void clickProductSearchBox()
 	{
+		waitForElementToBeClickable(productSearchBox);
 		objStepBase.getDriver().findElement(productSearchBox).click();
 	}
 
 	public void clickProductSearchButton()
 	{
+		waitForElementToBeClickable(productSearchButton);
 		objStepBase.getDriver().findElement(productSearchButton).click();
 	}
 	
 	public void selectSeudeKohlerProduct()
 	{
+		waitForElementToBeClickable(seude_kohler_product);
 		objStepBase.getDriver().findElement(seude_kohler_product).click();
 	}
 	
 	public void selectCashmereKohlerProduct()
 	{
+		waitForElementToBeClickable(cashmere_kohler_product);
 		objStepBase.getDriver().findElement(cashmere_kohler_product).click();
 	}
 
@@ -63,26 +71,16 @@ public class BuildHomePage
 	
 	public void clickAddToCartButton()
 	{
+		waitForElementToBeClickable(btnAddToCart);
 		objStepBase.getDriver().findElement(btnAddToCart).click();
 	}
 		
 	public void clickContinueShoppingButton()
 	{
+		waitForElementToBeClickable(btnContinueShopping);
 		objStepBase.getDriver().findElement(btnContinueShopping).click();
 	}
 	
-	public void goToHomePage()
-	{
-		try 
-		{
-			Thread.sleep(10000L);
-			objStepBase.getDriver().get("https://www.build.com/");
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 	public void searchProduct(String productName)
 	{
 		objStepBase.getWebdriverWait().until(ExpectedConditions.elementToBeClickable(productSearchBox));
