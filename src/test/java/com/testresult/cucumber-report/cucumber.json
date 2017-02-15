@@ -1,0 +1,476 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13990582790,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.applyHook(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Assessment_TestCase1",
+        "description": "",
+        "id": "build---selenium-webdriver-automation-assessment;assessment-testcase1;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1686281099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.removeHook(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 171941298,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the browser and navigate to build website homepage",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_open_the_browser_and_navigate_to_build_website_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34841872936,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add one product with Suede Kohler K66266U name to the cart",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42635992274,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add one product with Cashmere Kohler K66266U name to the cart",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_add_one_Cashmere_Kohler_K66266U_to_the_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41944486286,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I add two product with Kohler K-5180-ST name to the cart",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_add_two_product_with_Kohler_K_5180_ST_name_to_the_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9578752177,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I checkout from shopping",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_checkout_from_shopping()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6021949789,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I select checkout as guest option",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_select_checkout_as_guest_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9541076996,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter Shreyas in first name field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shreyas",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_firstName_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1059580134,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter Patil in last name field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Patil",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_lastName_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 935535090,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter Build in company name field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Build",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_companyName_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1047625884,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter 3041 S Michigan Ave in street address field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3041 S Michigan Ave",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_street_address_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 960917265,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter Apt 211 in apartment address field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Apt 211",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_apartment_address_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1017941338,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter 60616 in zip code field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "60616",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_zipcode_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1260710072,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter Chicago in city field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chicago",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_city_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1702238365,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I select Illinois from state dropdown in Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Illinois",
+                  "offset": 9
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_select_state_from_dropdown_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1108609043,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I select United States from country dropdown in Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "United States",
+                  "offset": 9
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_select_country_from_dropdown_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1271662550,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter 3128891919 in phone field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3128891919",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_phone_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1040404241,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I enter patilsr91@gmail.com in email field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "patilsr91@gmail.com",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_email_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1145454093,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter 4111111111111111 in credit card number field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4111111111111111",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_creditCardNo_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              11
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1510617119,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I select 02 in credit card month validity field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "02",
+                  "offset": 9
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_select_expiryMonth__validity_field_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1600263124,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I select 2017 in credit card year validity field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2017",
+                  "offset": 9
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_select_expiryYear_validity_field_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 902408195,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter Shreyas Patil in cardName field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shreyas Patil",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_cardName_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              14
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 824804752,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I enter 123 in cvv field of Shipping Address Form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 8
+                }
+              ],
+              "location": "AssessmentStepDefinitions.I_enter_cvv_in_Shipping_Address_Form(String)"
+            },
+            "matchedColumns": [
+              15
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7442686763,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on Review Order button",
+            "match": {
+              "location": "AssessmentStepDefinitions.I_click_on_Review_Order_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Build"
+          }
+        ]
+      }
+    ],
+    "name": "Build - Selenium Webdriver Automation Assessment",
+    "description": "",
+    "id": "build---selenium-webdriver-automation-assessment",
+    "keyword": "Feature",
+    "uri": "Assessment.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Build"
+      }
+    ]
+  }
+]

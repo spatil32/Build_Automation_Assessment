@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="185.244394">
+<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="185.244394">
+<system-out><![CDATA[Given I open the browser and navigate to build website homepage.............passed
+Then I add one product with Suede Kohler K66266U name to the cart...........passed
+Then I add one product with Cashmere Kohler K66266U name to the cart........passed
+Then I add two product with Kohler K-5180-ST name to the cart...............passed
+Then I checkout from shopping...............................................passed
+Then I select checkout as guest option......................................passed
+Then I enter Shreyas in first name field of Shipping Address Form...........passed
+Then I enter Patil in last name field of Shipping Address Form..............passed
+Then I enter Build in company name field of Shipping Address Form...........passed
+Then I enter 3041 S Michigan Ave in street address field of Shipping Address Form.passed
+Then I enter Apt 211 in apartment address field of Shipping Address Form....passed
+Then I enter 60616 in zip code field of Shipping Address Form...............passed
+Then I enter Chicago in city field of Shipping Address Form.................passed
+Then I select Illinois from state dropdown in Shipping Address Form.........passed
+Then I select United States from country dropdown in Shipping Address Form..passed
+Then I enter 3128891919 in phone field of Shipping Address Form.............passed
+Then I enter patilsr91@gmail.com in email field of Shipping Address Form....passed
+Then I enter 4111111111111111 in credit card number field of Shipping Address Form.passed
+Then I select 02 in credit card month validity field of Shipping Address Form.passed
+Then I select 2017 in credit card year validity field of Shipping Address Form.passed
+Then I enter Shreyas Patil in cardName field of Shipping Address Form.......passed
+Then I enter 123 in cvv field of Shipping Address Form......................passed
+Then I click on Review Order button.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
