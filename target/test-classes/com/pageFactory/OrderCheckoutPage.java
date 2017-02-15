@@ -1,5 +1,6 @@
 package com.pageFactory;
 
+import org.assertj.core.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
@@ -138,6 +139,11 @@ public class OrderCheckoutPage
 	public void clickReviewOrder()
 	{
 		objStepBase.getDriver().findElement(btnReviewOrder).click();
+	}
+	
+	public void confirmReviewOrderPage(String url)
+	{
+		Assertions.assertThat(objStepBase.getDriver().getCurrentUrl().equalsIgnoreCase(url));
 	}
 
 }

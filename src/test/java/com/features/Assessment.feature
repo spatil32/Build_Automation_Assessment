@@ -25,8 +25,10 @@ Scenario Outline: Assessment_TestCase1
 	Then I enter <cardName> in cardName field of Shipping Address Form
 	Then I enter <cvv> in cvv field of Shipping Address Form
 	Then I click on Review Order button
+	Then I verify <url> for delivery & review page
+	
 	
 	Examples:
-	|   fname | lname    |  	company 		| 		streetAddress 	| apartment | zipCode |   city  | state  |		country    | 		phone 	| 				email 			| creditCardNo   | expiryMonth | expiryYear | 	cardName  	| cvv |
-	| Shreyas |   Patil  | 		 Build 			| 3041 S Michigan Ave |  Apt 211  |  60616  | Chicago |Illinois| United States | 3128891919 | patilsr91@gmail.com |4111111111111111|     02      |		2017		| Shreyas Patil | 123 |
+	|   fname | lname    |  	company 		| 		streetAddress 	| apartment | zipCode |   city  | state  |		country    | 		phone 	| 				email 			| creditCardNo   | expiryMonth | expiryYear | 	cardName  	| cvv | 												url 											 |
+	| Shreyas |   Patil  | 		 Build 			| 3041 S Michigan Ave |  Apt 211  |  60616  | Chicago |Illinois| United States | 3128891919 | patilsr91@gmail.com |4111111111111111|     02      |		2017		| Shreyas Patil | 123 |https://www.build.com/index.cfm?page=checkout:review|
 	

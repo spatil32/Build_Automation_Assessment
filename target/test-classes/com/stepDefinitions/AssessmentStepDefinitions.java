@@ -228,4 +228,10 @@ public class AssessmentStepDefinitions
 	{
 		objOrderCheckoutPage.clickReviewOrder();
 	}
+	
+	@Then("^I verify (.*) for delivery & review page$")
+	public void I_verify_url_for_delivery_and_review_page(String url)
+	{
+		
+	}
 }
