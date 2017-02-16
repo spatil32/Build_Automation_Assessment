@@ -1,6 +1,0 @@
-com\stepDefinitions\AssessmentStepDefinitions.class
-com\features\TestRunner.class
-com\Hooks\Hooks.class
-com\generic\StepBase.class
-com\pageFactory\BuildHomePage.class
-com\pageFactory\OrderCheckoutPage.class

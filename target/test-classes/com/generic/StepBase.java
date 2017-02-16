@@ -17,10 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import cucumber.api.Scenario;
 
 /**
- * @ScriptName    : StepBase
- * @Description   : This class contains generic functionalities like setup/teardown test environment  
- * @Author        : Shreyas Patil
- * @Creation Date : 14 Feb 2017                       
+ * This class contains generic functionalities like setup/teardown test environment  
+ * @author Shreyas Patil
  */
 public class StepBase 
 {
@@ -33,11 +31,10 @@ public class StepBase
 	private String driverServerPath = null;
 
 	/**
-	 * @Method: setUp
-	 * @Description:  This method is used to initialize test execution environment 
-	 * 				 i.e. webdriver initialization, setting capabilities for selected device
+	 * This method is used to initialize test execution environment 
+	 * i.e. webdriver initialization, setting capabilities for selected device
 	 * @author Shreyas Patil 
-	 * @Creation Date:  14 Feb 2017
+	 * @param cScenario current scenario
 	 */
 	public void setUp(Scenario cScenario)
 	{
@@ -47,22 +44,25 @@ public class StepBase
 			// Load configuration file
 			Properties objConfig = new Properties();
 			objConfig.load(new FileInputStream(System.getProperty("user.dir") + "/config.properties"));
-			
+			//Read browser, driver server path and URL from config file
 			browser = objConfig.getProperty("test.browser");
 			url = objConfig.getProperty("test.url");
 			driverServerPath = System.getProperty("user.dir") + objConfig.getProperty("driverserverpath");
 			System.out.println("Browser = " + browser);
 			System.out.println("URL = " + url);
-			System.out.println("Driver Server Path = " + driverServerPath);
 			
+			//Desired capabilities
 			DesiredCapabilities capabilities = new DesiredCapabilities();
+			//loop for internet explorer
 			if(browser.equalsIgnoreCase("ie"))
 			{
 				String OStype =System.getProperty("os.arch");
+				//if windows system is 32 bit
 				if(OStype.contains("x86"))
 				{
 					System.setProperty("webdriver.ie.driver", driverServerPath + "//IEDriverServer_32bit.exe");
 				}
+				//if windows system is 64 bit
 				else
 				{
 					System.setProperty("webdriver.ie.driver", driverServerPath + "//IEDriverServer_64bit.exe");
@@ -72,12 +72,14 @@ public class StepBase
 				capabilities.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);					
 				driver = new InternetExplorerDriver(capabilities);
 			}
+			//loop for firefox
 			else if(browser.equalsIgnoreCase("firefox"))
 			{
 				capabilities = DesiredCapabilities.firefox();
 				capabilities.setJavascriptEnabled(true);
 				driver = new FirefoxDriver(capabilities);
 			}
+			//loop for chrome
 			else if(browser.equalsIgnoreCase("chrome"))
 			{
 				System.setProperty("webdriver.chrome.driver", driverServerPath.concat("//chromedriver.exe"));
@@ -88,6 +90,7 @@ public class StepBase
 				capabilities.setCapability("ignoreProtectedModeSettings", true);
 				driver = new ChromeDriver(capabilities);
 			}
+			//for browsers other than ie, firefox & chrome
 			else
 				throw new Exception("The " + browser + " browser is not supported. Try with another browser.");
 			webDriverWait = new WebDriverWait(driver, 10L);
@@ -102,16 +105,15 @@ public class StepBase
 	}
 
 	/**
-	 * @Method: tearDown
-	 * @Description: this method is used to close the appium driver instance. 
+	 * This method is used to close the webdriver instance. 
 	 * @author Shreyas Patil 
-	 * @throws Exception 
-	 * @Creation Date:  14 Feb 2017
+	 * @param scenario current scenario
 	 */
 	public void tearDown(Scenario scenario) 
 	{
 		try 
 		{
+			//if test case fails, take the screenshot and embed it to html report
 			if (scenario.isFailed()) 
 			{
 				embedScreenshot();
@@ -126,11 +128,9 @@ public class StepBase
 	}
 
 	/**
-	 * @Method: getDriver
-	 * @Description:  This method returns webdriver instance.
+	 * This method returns webdriver instance.
 	 * @return :WebDriver instance
 	 * @author Shreyas Patil
-	 * @Creation Date:  14 Feb 2017
 	 */
 	public WebDriver getDriver()
 	{
@@ -138,11 +138,9 @@ public class StepBase
 	}
 
 	/**
-	 * @Method: getDriver
-	 * @Description:  This method returns webdriverwait instance.
+	 * This method returns webdriverwait instance.
 	 * @return :WebDriverWait instance
 	 * @author Shreyas Patil
-	 * @Creation Date:  14 Feb 2017
 	 */
 	public WebDriverWait getWebdriverWait()
 	{
@@ -150,10 +148,8 @@ public class StepBase
 	}
 
 	/**	
-	 * Method: embedScreenshot
-	 * Description: This method attach screenshot to the cucumber report. 
+	 * This method attach screenshot to the cucumber report. 
 	 * @author Shreyas Patil 
-	 * @Creation Date:  14 Feb 2017
 	 */
 	public static void embedScreenshot()
 	{

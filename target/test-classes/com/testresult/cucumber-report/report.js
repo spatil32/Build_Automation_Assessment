@@ -206,7 +206,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 4303233345,
+  "duration": 12351262830,
   "status": "passed"
 });
 formatter.scenario({
@@ -408,40 +408,43 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_open_the_browser_and_navigate_to_build_website_homepage()"
 });
 formatter.result({
-  "duration": 172343003,
+  "duration": 169232574,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart()"
 });
 formatter.result({
-  "duration": 10072995832,
-  "error_message": "org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: input[id\u003d\u0027search_txt\u0027]\nBuild info: version: \u00272.45.0\u0027, revision: \u00275017cb8e7ca8e37638dc3091b2440b90a1d8686f\u0027, time: \u00272015-02-27 09:10:26\u0027\nSystem info: host: \u0027Shreyas-PC\u0027, ip: \u0027192.168.0.107\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: org.openqa.selenium.ie.InternetExplorerDriver\nCapabilities [{browserAttachTimeout\u003d0, ie.enableFullPageScreenshot\u003dtrue, enablePersistentHover\u003dtrue, ie.forceCreateProcessApi\u003dfalse, ie.forceShellWindowsApi\u003dfalse, pageLoadStrategy\u003dnormal, ignoreZoomSetting\u003dfalse, ie.fileUploadDialogTimeout\u003d3000, version\u003d8, platform\u003dWINDOWS, proxy\u003d{proxyType\u003d}, nativeEvents\u003dtrue, ie.ensureCleanSession\u003dfalse, elementScrollBehavior\u003d0, ie.browserCommandLineSwitches\u003d, requireWindowFocus\u003dfalse, browserName\u003dinternet explorer, initialBrowserUrl\u003dhttp://localhost:19722/, javascriptEnabled\u003dtrue, ignoreProtectedModeSettings\u003dfalse, enableElementCacheCleanup\u003dtrue, unexpectedAlertBehaviour\u003ddismiss}]\nSession ID: 0c89a23c-154a-41d2-b74c-13f4b4a1fc93\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat com.pageFactory.BuildHomePage.searchProduct(BuildHomePage.java:88)\r\n\tat com.stepDefinitions.AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart(AssessmentStepDefinitions.java:41)\r\n\tat ✽.Then I add one product with Suede Kohler K66266U name to the cart(Assessment.feature:6)\r\nCaused by: org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 9 milliseconds\nBuild info: version: \u00272.45.0\u0027, revision: \u00275017cb8e7ca8e37638dc3091b2440b90a1d8686f\u0027, time: \u00272015-02-27 09:10:26\u0027\nSystem info: host: \u0027Shreyas-PC\u0027, ip: \u0027192.168.0.107\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_102\u0027\nDriver info: org.openqa.selenium.ie.InternetExplorerDriver\nCapabilities [{browserAttachTimeout\u003d0, ie.enableFullPageScreenshot\u003dtrue, enablePersistentHover\u003dtrue, ie.forceCreateProcessApi\u003dfalse, ie.forceShellWindowsApi\u003dfalse, pageLoadStrategy\u003dnormal, ignoreZoomSetting\u003dfalse, ie.fileUploadDialogTimeout\u003d3000, version\u003d8, platform\u003dWINDOWS, proxy\u003d{proxyType\u003d}, nativeEvents\u003dtrue, ie.ensureCleanSession\u003dfalse, elementScrollBehavior\u003d0, ie.browserCommandLineSwitches\u003d, requireWindowFocus\u003dfalse, browserName\u003dinternet explorer, initialBrowserUrl\u003dhttp://localhost:19722/, javascriptEnabled\u003dtrue, ignoreProtectedModeSettings\u003dfalse, enableElementCacheCleanup\u003dtrue, unexpectedAlertBehaviour\u003ddismiss}]\nSession ID: 0c89a23c-154a-41d2-b74c-13f4b4a1fc93\n*** Element info: {Using\u003dcss selector, value\u003dinput[id\u003d\u0027search_txt\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:528)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:521)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat com.pageFactory.BuildHomePage.searchProduct(BuildHomePage.java:88)\r\n\tat com.stepDefinitions.AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart(AssessmentStepDefinitions.java:41)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
-  "status": "failed"
+  "duration": 30942232896,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_add_one_Cashmere_Kohler_K66266U_to_the_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 26379483582,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_add_two_product_with_Kohler_K_5180_ST_name_to_the_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25386229788,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_checkout_from_shopping()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9851282305,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_select_checkout_as_guest_option()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5755707736,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -453,7 +456,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_firstName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8306877181,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -465,7 +469,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_lastName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1609245871,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -477,7 +482,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_companyName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 835411783,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -489,7 +495,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_street_address_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 909485538,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -501,7 +508,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_apartment_address_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 851590720,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -513,7 +521,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_zipcode_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 992754260,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -525,7 +534,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_city_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1164507150,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -537,7 +547,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_state_from_dropdown_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1378680613,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -549,7 +560,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_country_from_dropdown_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 744397787,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -561,7 +573,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_phone_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 765407218,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -573,7 +586,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_email_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 805639893,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -585,7 +599,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_creditCardNo_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 790488104,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -597,7 +612,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_expiryMonth__validity_field_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1441059013,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -609,7 +625,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_expiryYear_validity_field_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1186746170,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -621,7 +638,8 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_cardName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 735011249,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -633,13 +651,15 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_cvv_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 640370534,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_click_on_Review_Order_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6742576728,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -651,22 +671,25 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_verify_url_for_delivery_and_review_page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 681806078,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_verify_that_CA_tax_is_correct()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 317477455,
+  "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_verify_that_grand_total_is_correct()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 850172731,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 38706843,
+  "duration": 783330676,
   "status": "passed"
 });
 });

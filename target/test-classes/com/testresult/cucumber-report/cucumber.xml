@@ -1,134 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="14.587279">
-<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="14.587279">
-<failure message="org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: input[id='search_txt']&#10;Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'&#10;System info: host: 'Shreyas-PC', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'&#10;Driver info: org.openqa.selenium.ie.InternetExplorerDriver&#10;Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=8, platform=WINDOWS, proxy={proxyType=}, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:19722/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]&#10;Session ID: 0c89a23c-154a-41d2-b74c-13f4b4a1fc93&#13;&#10;&#9;at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)&#13;&#10;&#9;at com.pageFactory.BuildHomePage.searchProduct(BuildHomePage.java:88)&#13;&#10;&#9;at com.stepDefinitions.AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart(AssessmentStepDefinitions.java:41)&#13;&#10;&#9;at ✽.Then I add one product with Suede Kohler K66266U name to the cart(Assessment.feature:6)&#13;&#10;Caused by: org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 9 milliseconds&#10;Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'&#10;System info: host: 'Shreyas-PC', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'&#10;Driver info: org.openqa.selenium.ie.InternetExplorerDriver&#10;Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=8, platform=WINDOWS, proxy={proxyType=}, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:19722/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]&#10;Session ID: 0c89a23c-154a-41d2-b74c-13f4b4a1fc93&#10;*** Element info: {Using=css selector, value=input[id='search_txt']}&#13;&#10;&#9;at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)&#13;&#10;&#9;at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:528)&#13;&#10;&#9;at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:521)&#13;&#10;&#9;at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)&#13;&#10;&#9;at com.pageFactory.BuildHomePage.searchProduct(BuildHomePage.java:88)&#13;&#10;&#9;at com.stepDefinitions.AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart(AssessmentStepDefinitions.java:41)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:37)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:13)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:31)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:299)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:127)&#13;&#10;&#9;at org.junit.runners.Suite.runChild(Suite.java:26)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#13;&#10;&#9;at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#13;&#10;&#9;at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)&#13;&#10;"><![CDATA[Given I open the browser and navigate to build website homepage.............passed
-Then I add one product with Suede Kohler K66266U name to the cart...........failed
-Then I add one product with Cashmere Kohler K66266U name to the cart........skipped
-Then I add two product with Kohler K-5180-ST name to the cart...............skipped
-Then I checkout from shopping...............................................skipped
-Then I select checkout as guest option......................................skipped
-Then I enter Shreyas in first name field of Shipping Address Form...........skipped
-Then I enter Patil in last name field of Shipping Address Form..............skipped
-Then I enter Build in company name field of Shipping Address Form...........skipped
-Then I enter 3041 S Michigan Ave in street address field of Shipping Address Form.skipped
-Then I enter Apt 211 in apartment address field of Shipping Address Form....skipped
-Then I enter 60616 in zip code field of Shipping Address Form...............skipped
-Then I enter Chicago in city field of Shipping Address Form.................skipped
-Then I select Illinois from state dropdown in Shipping Address Form.........skipped
-Then I select United States from country dropdown in Shipping Address Form..skipped
-Then I enter 3128891919 in phone field of Shipping Address Form.............skipped
-Then I enter patilsr91@gmail.com in email field of Shipping Address Form....skipped
-Then I enter 4111111111111111 in credit card number field of Shipping Address Form.skipped
-Then I select 02 in credit card month validity field of Shipping Address Form.skipped
-Then I select 2017 in credit card year validity field of Shipping Address Form.skipped
-Then I enter Shreyas Patil in cardName field of Shipping Address Form.......skipped
-Then I enter 123 in cvv field of Shipping Address Form......................skipped
-Then I click on Review Order button.........................................skipped
-Then I verify https://www.build.com/index.cfm?page=checkout:review for delivery & review page.skipped
-Then I verify that CA tax is correct........................................skipped
-Then I verify that grand total is correct...................................skipped
-
-StackTrace:
-org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.cssSelector: input[id='search_txt']
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'Shreyas-PC', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=8, platform=WINDOWS, proxy={proxyType=}, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:19722/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 0c89a23c-154a-41d2-b74c-13f4b4a1fc93
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.pageFactory.BuildHomePage.searchProduct(BuildHomePage.java:88)
-	at com.stepDefinitions.AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart(AssessmentStepDefinitions.java:41)
-	at ✽.Then I add one product with Suede Kohler K66266U name to the cart(Assessment.feature:6)
-Caused by: org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 9 milliseconds
-Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
-System info: host: 'Shreyas-PC', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=8, platform=WINDOWS, proxy={proxyType=}, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:19722/, javascriptEnabled=true, ignoreProtectedModeSettings=false, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 0c89a23c-154a-41d2-b74c-13f4b4a1fc93
-*** Element info: {Using=css selector, value=input[id='search_txt']}
-	at sun.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:425)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
-	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
-	at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:528)
-	at org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:521)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.pageFactory.BuildHomePage.searchProduct(BuildHomePage.java:88)
-	at com.stepDefinitions.AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart(AssessmentStepDefinitions.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:37)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
-	at cucumber.runtime.Utils.invoke(Utils.java:31)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
-	at org.junit.runners.Suite.runChild(Suite.java:127)
-	at org.junit.runners.Suite.runChild(Suite.java:26)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
-	at org.junit.runners.Suite.runChild(Suite.java:127)
-	at org.junit.runners.Suite.runChild(Suite.java:26)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]></failure>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="143.368468">
+<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="143.368468">
+<system-out><![CDATA[Given I open the browser and navigate to build website homepage.............passed
+Then I add one product with Suede Kohler K66266U name to the cart...........passed
+Then I add one product with Cashmere Kohler K66266U name to the cart........passed
+Then I add two product with Kohler K-5180-ST name to the cart...............passed
+Then I checkout from shopping...............................................passed
+Then I select checkout as guest option......................................passed
+Then I enter Shreyas in first name field of Shipping Address Form...........passed
+Then I enter Patil in last name field of Shipping Address Form..............passed
+Then I enter Build in company name field of Shipping Address Form...........passed
+Then I enter 3041 S Michigan Ave in street address field of Shipping Address Form.passed
+Then I enter Apt 211 in apartment address field of Shipping Address Form....passed
+Then I enter 60616 in zip code field of Shipping Address Form...............passed
+Then I enter Chicago in city field of Shipping Address Form.................passed
+Then I select Illinois from state dropdown in Shipping Address Form.........passed
+Then I select United States from country dropdown in Shipping Address Form..passed
+Then I enter 3128891919 in phone field of Shipping Address Form.............passed
+Then I enter patilsr91@gmail.com in email field of Shipping Address Form....passed
+Then I enter 4111111111111111 in credit card number field of Shipping Address Form.passed
+Then I select 02 in credit card month validity field of Shipping Address Form.passed
+Then I select 2017 in credit card year validity field of Shipping Address Form.passed
+Then I enter Shreyas Patil in cardName field of Shipping Address Form.......passed
+Then I enter 123 in cvv field of Shipping Address Form......................passed
+Then I click on Review Order button.........................................passed
+Then I verify https://www.build.com/index.cfm?page=checkout:review for delivery & review page.passed
+Then I verify that CA tax is correct........................................passed
+Then I verify that grand total is correct...................................passed
+]]></system-out>
 </testcase>
 </testsuite>

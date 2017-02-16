@@ -1,37 +1,31 @@
 package com.stepDefinitions;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.assertj.core.api.Assertions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.generic.StepBase;
 import com.pageFactory.BuildHomePage;
 import com.pageFactory.OrderCheckoutPage;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
+/**
+ * This class contains wrapper functions for all the steps in feature file
+ * @author Shreyas Patil
+ */
 public class AssessmentStepDefinitions
 {
+	//Local variables
 	private StepBase objStepBase = new StepBase();
-	private WebDriver driver;
 	private WebDriverWait webdriverWait;
 	private BuildHomePage objBuildHomePage = new BuildHomePage();
 	private OrderCheckoutPage objOrderCheckoutPage = new OrderCheckoutPage();
 	
+	//wrapper step definitions
 	@Given("^I open the browser and navigate to build website homepage$")
 	public void I_open_the_browser_and_navigate_to_build_website_homepage()
 	{
 		System.out.println("Test started...");
-		driver = objStepBase.getDriver();
 		webdriverWait = objStepBase.getWebdriverWait();
 	}
 	
@@ -40,9 +34,9 @@ public class AssessmentStepDefinitions
 	{
 		objBuildHomePage.searchProduct("Suede Kohler K66266U");
 		objBuildHomePage.selectSeudeKohlerProduct();
-		
-		Assert.assertTrue("Correct product is not selected.", objBuildHomePage.getProductHeaderText().contains("Suede"));
-		System.out.println(objBuildHomePage.getProductHeaderText());
+		//AssertJ validations to check if Seude product is selected
+		Assertions.assertThat(objBuildHomePage.getProductHeaderText().contains("Suede"));
+		System.out.println("Selected product is : " + objBuildHomePage.getProductHeaderText());
 		
 		objBuildHomePage.setProductQuantity("1");
 		objBuildHomePage.clickAddToCartButton();
@@ -56,9 +50,9 @@ public class AssessmentStepDefinitions
 			objBuildHomePage.waitForElementToBeClickable(BuildHomePage.reSearchButton);
 			objBuildHomePage.searchProduct("Cashmere Kohler K66266U");
 			objBuildHomePage.selectCashmereKohlerProduct();
-			
-			Assert.assertTrue("Correct product is not selected.", objBuildHomePage.getProductHeaderText().contains("Cashmere"));
-			System.out.println(objBuildHomePage.getProductHeaderText());
+			//AssertJ validations to check if Cashmere product is selected
+			Assertions.assertThat(objBuildHomePage.getProductHeaderText().contains("Cashmere"));
+			System.out.println("Selected product is : " + objBuildHomePage.getProductHeaderText());
 						
 			objBuildHomePage.setProductQuantity("1");
 			objBuildHomePage.clickAddToCartButton();
@@ -76,7 +70,7 @@ public class AssessmentStepDefinitions
 		{
 			objBuildHomePage.waitForElementToBeClickable(BuildHomePage.reSearchButton);
 			objBuildHomePage.searchProduct("Kohler K-5180-ST");
-									
+			
 			objBuildHomePage.setProductQuantity("2");
 			objBuildHomePage.clickAddToCartButton();
 		}
