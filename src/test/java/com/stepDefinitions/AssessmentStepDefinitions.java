@@ -83,6 +83,7 @@ public class AssessmentStepDefinitions
 			
 			objBuildHomePage.setProductQuantity("2");
 			objBuildHomePage.clickAddToCartButton();
+			objBuildHomePage.checkFourProductsInCart();
 		}
 		catch (Exception e)
 		{
