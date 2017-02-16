@@ -29,7 +29,7 @@ public class BuildHomePage
 	public static By seude_kohler_product = By.cssSelector("li[class='media'][data-original-title='Suede<br>$740.03 / Made To Order']");
 	public static By product_header_text = By.cssSelector("h2[class='sub-text js-sub-heading']");
 	public static By productPrice = By.cssSelector("div[class='text-price']>span[class*='js-price']");
-	public static By productQuantity = By.cssSelector(".js-qty-input.qtyselected.form-control");
+	public static By productQuantity = By.cssSelector("input[class='js-qty-input qtyselected form-control']");
 	public static By btnContinueShopping = By.cssSelector("button[class='button secondary dropdown-toggle']");
 	public static By btnAddToCart = By.cssSelector("button[class*='button-primary add-to-cart js-add-to-cart btn-lg']");
 	public static By homePageLink = By.cssSelector("a[href*='/?intcmp=cart_home']");
@@ -150,8 +150,6 @@ public class BuildHomePage
 			objStepBase.getDriver().findElement(reSearchProduct).clear();
 			objStepBase.getDriver().findElement(reSearchProduct).sendKeys("Kohler K-5180-ST");
 			objStepBase.getDriver().findElement(secondarySearchButton).click();
-			
-			setProductQuantity("1");
 			clickAddToCartButton();
 		}
 	}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="177.849474">
-<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="177.849474">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="196.472208">
+<testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="196.472208">
 <system-out><![CDATA[Given I open the browser and navigate to build website homepage.............passed
 Then I add one product with Suede Kohler K66266U name to the cart...........passed
 Then I add one product with Cashmere Kohler K66266U name to the cart........passed

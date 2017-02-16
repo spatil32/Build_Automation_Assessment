@@ -206,7 +206,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 14114485774,
+  "duration": 13516249135,
   "status": "passed"
 });
 formatter.scenario({
@@ -408,42 +408,42 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_open_the_browser_and_navigate_to_build_website_homepage()"
 });
 formatter.result({
-  "duration": 164388041,
+  "duration": 188405548,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_add_one_Suede_Kohler_K66266U_to_the_cart()"
 });
 formatter.result({
-  "duration": 31682808770,
+  "duration": 35348120247,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_add_one_Cashmere_Kohler_K66266U_to_the_cart()"
 });
 formatter.result({
-  "duration": 27318941639,
+  "duration": 33046635140,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_add_two_product_with_Kohler_K_5180_ST_name_to_the_cart()"
 });
 formatter.result({
-  "duration": 53847176883,
+  "duration": 58727272315,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_checkout_from_shopping()"
 });
 formatter.result({
-  "duration": 8634367516,
+  "duration": 10441796314,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_select_checkout_as_guest_option()"
 });
 formatter.result({
-  "duration": 11818899520,
+  "duration": 14183890716,
   "status": "passed"
 });
 formatter.match({
@@ -456,7 +456,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_firstName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 1761037310,
+  "duration": 2149502096,
   "status": "passed"
 });
 formatter.match({
@@ -469,7 +469,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_lastName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 1523121244,
+  "duration": 2042784694,
   "status": "passed"
 });
 formatter.match({
@@ -482,7 +482,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_companyName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 860951443,
+  "duration": 932817827,
   "status": "passed"
 });
 formatter.match({
@@ -495,7 +495,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_street_address_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 989157884,
+  "duration": 1172852047,
   "status": "passed"
 });
 formatter.match({
@@ -508,7 +508,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_apartment_address_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 817459340,
+  "duration": 840680671,
   "status": "passed"
 });
 formatter.match({
@@ -521,7 +521,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_zipcode_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 815374701,
+  "duration": 832970269,
   "status": "passed"
 });
 formatter.match({
@@ -534,7 +534,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_city_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 1224829443,
+  "duration": 1064201723,
   "status": "passed"
 });
 formatter.match({
@@ -547,7 +547,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_state_from_dropdown_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 1489036963,
+  "duration": 1952699569,
   "status": "passed"
 });
 formatter.match({
@@ -560,7 +560,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_country_from_dropdown_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 766227396,
+  "duration": 738618495,
   "status": "passed"
 });
 formatter.match({
@@ -573,7 +573,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_phone_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 730411276,
+  "duration": 842989036,
   "status": "passed"
 });
 formatter.match({
@@ -586,7 +586,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_email_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 781553094,
+  "duration": 1005721322,
   "status": "passed"
 });
 formatter.match({
@@ -599,7 +599,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_creditCardNo_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 771297920,
+  "duration": 949889405,
   "status": "passed"
 });
 formatter.match({
@@ -612,7 +612,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_expiryMonth__validity_field_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 1952257551,
+  "duration": 1577380284,
   "status": "passed"
 });
 formatter.match({
@@ -625,7 +625,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_select_expiryYear_validity_field_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 1237665168,
+  "duration": 1402807718,
   "status": "passed"
 });
 formatter.match({
@@ -638,7 +638,7 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_cardName_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 705243435,
+  "duration": 853631430,
   "status": "passed"
 });
 formatter.match({
@@ -651,14 +651,14 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_enter_cvv_in_Shipping_Address_Form(String)"
 });
 formatter.result({
-  "duration": 636106149,
+  "duration": 747221990,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_click_on_Review_Order_button()"
 });
 formatter.result({
-  "duration": 10450485404,
+  "duration": 8511363389,
   "status": "passed"
 });
 formatter.match({
@@ -671,25 +671,25 @@ formatter.match({
   "location": "AssessmentStepDefinitions.I_verify_url_for_delivery_and_review_page(String)"
 });
 formatter.result({
-  "duration": 528162782,
+  "duration": 658774053,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_verify_that_CA_tax_is_correct()"
 });
 formatter.result({
-  "duration": 325995808,
+  "duration": 372081596,
   "status": "passed"
 });
 formatter.match({
   "location": "AssessmentStepDefinitions.I_verify_that_grand_total_is_correct()"
 });
 formatter.result({
-  "duration": 943250533,
+  "duration": 1402638339,
   "status": "passed"
 });
 formatter.after({
-  "duration": 958781389,
+  "duration": 968212309,
   "status": "passed"
 });
 });
