@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Copyright (c) 2017 Shreyas Patil.
+    All rights reserved. This assessment framework or any portion thereof
+    may not be reproduced or used in any manner whatsoever
+    without the express written permission of the publisher
+    except for the use to review for assessment results by the members of build.com.
+   
+    Contributors:
+        Shreyas Patil
+ -->
+
 <testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="143.368468">
 <testcase classname="Build - Selenium Webdriver Automation Assessment" name="Assessment_TestCase1" time="143.368468">
 <system-out><![CDATA[Given I open the browser and navigate to build website homepage.............passed

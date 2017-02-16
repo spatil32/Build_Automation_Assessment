@@ -1,3 +1,13 @@
+/*******************************************************************************
+ * Copyright (c) 2017 Shreyas Patil.
+ * All rights reserved. This assessment framework or any portion thereof
+ * may not be reproduced or used in any manner whatsoever
+ * without the express written permission of the publisher
+ * except for the use to review for assessment results by the members of build.com.
+ *
+ * Contributors:
+ *     Shreyas Patil
+ *******************************************************************************/
 package com.generic;
 
 import java.io.FileInputStream;
