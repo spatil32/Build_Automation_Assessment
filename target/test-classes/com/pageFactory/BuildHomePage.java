@@ -15,15 +15,17 @@ public class BuildHomePage
 	public static By productSearchButton = By.cssSelector("button[class='button-primary search-site-search']");
 	public static By reSearchButton = By.cssSelector("#search_txt");
 	//public static By seude_kohler_product = By.cssSelector("li[class='media'][data-original-title='Suede<br>$740.03 / Made To Order']");
-	public static By seude_kohler_product = By.cssSelector("img[alt='Suede']");		
+	//public static By seude_kohler_product = By.cssSelector("img[alt='Suede']");
+	public static By seude_kohler_product = By.cssSelector(".finish-swatch.js-gallery-thumbnail.js-finish-1868060");
 	public static By product_header_text = By.cssSelector("h2[class='sub-text js-sub-heading']");
 	public static By productPrice = By.cssSelector("div[class='text-price']>span[class*='js-price']");
 	public static By productQuantity = By.cssSelector("input[name='qty']");
 	public static By btnContinueShopping = By.cssSelector("button[class='button secondary dropdown-toggle']");
 	public static By btnAddToCart = By.cssSelector("button[class*='button-primary add-to-cart js-add-to-cart btn-lg']");
 	public static By homePageLink = By.cssSelector("a[href*='/?intcmp=cart_home']");
-	public static By cashmere_kohler_product = By.cssSelector("li[class='media'][data-original-title='Cashmere<br>$740.03 / 9 In Stock']");
-	
+	//public static By cashmere_kohler_product = By.cssSelector("li[class='media'][data-original-title='Cashmere<br>$740.03 / 9 In Stock']");
+	public static By cashmere_kohler_product = By.cssSelector(".finish-swatch.js-gallery-thumbnail.js-finish-173133");
+
 	public void waitForElementToBeClickable(By element)
 	{
 		objStepBase.getWebdriverWait().until(ExpectedConditions.elementToBeClickable(element));
